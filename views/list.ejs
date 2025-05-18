@@ -37,7 +37,7 @@
         <tbody>
             <% allData.map(data => { %>
                 <tr>
-                    <td><%= data.firstName %></td>
+                    <td><%= data.firstName + " " + data.lastName %></td>
                     <td><%= data.email %></td>
                     <td><%= data.address %></td>
                     <td><a href="/edit/<%= data._id %>" class="btn btn-success">Edit</a></td>
